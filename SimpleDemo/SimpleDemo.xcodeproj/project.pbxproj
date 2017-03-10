@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC25BA641DA28AC0008EDFB2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC25BA631DA28AC0008EDFB2 /* AudioToolbox.framework */; };
+		BC5DB47E1DDC2FDE0087A527 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5DB47D1DDC2FDE0087A527 /* FileUtil.m */; };
 		BC9F1DE81DA616DC008320C6 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F1DE11DA616DC008320C6 /* libavcodec.a */; };
 		BC9F1DE91DA616DC008320C6 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F1DE21DA616DC008320C6 /* libavdevice.a */; };
 		BC9F1DEA1DA616DC008320C6 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9F1DE31DA616DC008320C6 /* libavfilter.a */; };
@@ -57,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		BC25BA631DA28AC0008EDFB2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BC5DB47C1DDC2FDE0087A527 /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
+		BC5DB47D1DDC2FDE0087A527 /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		BC9F1D611DA616DC008320C6 /* va_copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = va_copy.h; sourceTree = "<group>"; };
 		BC9F1D631DA616DC008320C6 /* avcodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avcodec.h; sourceTree = "<group>"; };
 		BC9F1D641DA616DC008320C6 /* avdct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avdct.h; sourceTree = "<group>"; };
@@ -255,6 +258,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC5DB47B1DDC2FC40087A527 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC5DB47C1DDC2FDE0087A527 /* FileUtil.h */,
+				BC5DB47D1DDC2FDE0087A527 /* FileUtil.m */,
+			);
+			name = Utils;
+			path = SimpleDemo/Utils;
+			sourceTree = "<group>";
+		};
 		BC9F1D5E1DA616DC008320C6 /* FFmpeg-iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +546,7 @@
 		BCF677911DA1451000BD097D = {
 			isa = PBXGroup;
 			children = (
+				BC5DB47B1DDC2FC40087A527 /* Utils */,
 				BC9F1DEF1DA616E6008320C6 /* fc */,
 				BC9F1D5E1DA616DC008320C6 /* FFmpeg-iOS */,
 				BCF6779C1DA1451000BD097D /* SimpleDemo */,
@@ -748,6 +762,7 @@
 				BC9F1E011DA617CE008320C6 /* C2OC.m in Sources */,
 				BC9F1DFC1DA616E6008320C6 /* ffmpeg_opt.c in Sources */,
 				BC9F1DF91DA616E6008320C6 /* cmdutils.c in Sources */,
+				BC5DB47E1DDC2FDE0087A527 /* FileUtil.m in Sources */,
 				BC9F1DFB1DA616E6008320C6 /* ffmpeg_filter.c in Sources */,
 				BCF677A51DA1451000BD097D /* ViewController.m in Sources */,
 				BCF677A21DA1451000BD097D /* AppDelegate.m in Sources */,
